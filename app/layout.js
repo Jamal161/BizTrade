@@ -2,8 +2,8 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Biztrade | E-commerce Task",
-  description: "Biztrade Ventures Task - Senior Frontend Developer",
+  title: "Biztrade | E-commerce",
+  description: "Biztrade ",
 };
 
 export default function RootLayout({ children }) {
