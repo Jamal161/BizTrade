@@ -1,0 +1,40 @@
+/* body size and color */
+.mainBody {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ededed;
+}
+
+/* Responsive breakpoints */
+@media (max-width: 1400px) {
+  .mainBody {
+    padding: 0 2rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .mainBody {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .mainBody {
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .mainBody {
+    padding: 0 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .mainBody {
+    padding: 0 0.25rem;
+  }
+}

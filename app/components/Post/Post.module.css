@@ -1,0 +1,132 @@
+.postContainer {
+  width: 86%;
+  margin: 3rem auto;
+  height: 360px;
+  display: flex;
+  border-radius: 8px;
+  background: linear-gradient(
+  to right,
+  #e1b285 0%,
+  #e1b285 10%,
+  #e5bb94 20%,
+  #e5bb94 30%,
+  #e5bb94 40%,
+  #f0dfcf 50%,
+  #f8f6f6 60%,
+  #f8f6f6 100%
+);
+
+  overflow: hidden;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.imageSection {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contentSection {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1px;
+  padding-left: 2rem;
+  height: 96%;
+  width: 100%;
+}
+
+.heading {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: #000;
+}
+
+.subheading {
+  font-size: 14px;
+  font-weight: 400;
+  color: #000000;
+  margin-bottom: 1rem;
+}
+
+.progressBar {
+  width: 80%;
+  height: 5px;
+  background-color: #F0F0F0;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.progress {
+  width: 40%;
+  height: 100%;
+  background-color: #FB7A31;
+  border-radius: 4px;
+}
+
+.label {
+  font-size: 12px;
+  font-weight: 400;
+  color: #000000;
+  margin-bottom: 1rem;
+}
+
+.required {
+  font-size: 14px;
+  font-weight: 400;
+  color: red;
+}
+
+.inputWrapper {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1.5rem;
+  background-color: white
+
+}
+
+.searchIcon {
+  margin-right: 0.75rem;
+  font-size: 1.2rem;
+  color: #999;
+}
+
+.input {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 1rem;
+  color: #333;
+}
+
+.buttonWrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.button {
+  text-align: center;
+  width: 120px;
+  padding: 0.75rem 1rem;
+  background-color: #0155B6;
+  font-size: 13px;
+  font-weight: 400;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #003f99;
+}
+

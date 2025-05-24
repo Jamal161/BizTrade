@@ -1,0 +1,113 @@
+.footerContainer {
+  width: 110%;
+  margin:  auto 0 auto;
+  background-color: #ffffff;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Top Feature Section */
+
+.featureSection {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 3rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.featureBox {
+  position: relative;
+  width: 200px;
+  height: 130px;
+  text-align: center;
+  padding: 0 1.4rem;
+  margin-bottom: 20px;
+}
+
+.featureBox::after {
+  content: "";
+  position: absolute;
+  top: 60px; 
+  right: 0;
+  width: 1px;
+  height: 50px; 
+  background-color: #E0E0E0;
+}
+
+.noBorder::after {
+  display: none;
+}
+
+.featureBox img {
+  width: 42px;
+  height: 42px;
+  margin-bottom: 0.1rem;
+}
+
+.featureBox h4 {
+  font-size: 14px;
+  font-weight: 550;
+  margin-bottom: 0.8rem;
+}
+
+.featureBox p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0%;
+  color: #999999;
+}
+
+
+/* Middle Link Section */
+
+.linkSection {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2rem;
+  width: 98%;
+  margin: 0 auto;
+  padding: 2rem 0 2rem 4rem;
+}
+
+.linkColumn h5 {
+  font-size: 14px;
+  font-weight: 550;
+  margin-bottom: 0.5rem;
+}
+
+.socialIcons {
+  padding-top: 8px;
+  display: flex;
+  gap: 12px;
+}
+
+
+.linkColumn ul {
+  list-style: none;
+}
+
+.linkColumn li {
+  margin-bottom: 6px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0%;
+  color: #999999;
+}
+
+/* Bottom Bar */
+
+.bottomBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 3rem;
+  font-size: 12px;
+  color: #777;
+  border-top: 1px solid #ddd;
+}

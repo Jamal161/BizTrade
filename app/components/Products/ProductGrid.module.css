@@ -1,0 +1,323 @@
+.wrapper {
+  width: 86%;
+  min-height: 360px;
+  padding: 1.8rem;
+  background: #f9f9f9;
+  margin: 1rem auto;
+  border-radius: 10px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 550;
+  margin-bottom: 1rem;
+}
+
+.controls {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  gap: 16px;
+  scroll-behavior: smooth;
+  padding: 8px 12px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.left,
+.right {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 4;
+}
+
+.left {
+  left: 0;
+}
+.right {
+  right: 0;
+}
+
+.card {
+  width: 24%;
+  min-width: 200px;
+  height: 265px;
+  background: white;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border: #E9ECED 2px solid;
+  overflow: hidden;
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.image {
+  width: 100%;
+  height: 132px;
+  object-fit: cover;
+  border-radius: 6px;
+  padding: 0.1rem;
+  border: #E9ECED 1px solid;
+  background-color: #F0F0F0;
+}
+
+.name, .category {
+  font-size: 13px;
+  font-weight: 550;
+  margin: 0.5rem 0;
+  color: #000000;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.moq{
+  font-size: 9px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.bottom{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+
+.shopInfo {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  font-size: 11px;
+}
+
+.icon {
+  border-radius: 50%;
+  padding: 0.1rem;
+  background-color: #3BEBF6;
+  color: white;
+}
+
+.enquiry {
+  font-size: 9px;
+  background-color: #6C63FF;
+  padding: 0.2rem 0.5rem;
+  border-radius: 3px;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  transition: background-color 0.2s;
+}
+
+.enquiry:hover {
+  background-color: #5a52d5;
+}
+
+/* Popup Styles */
+.popupOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+.popup {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  position: relative;
+  max-width: 1000px;
+  width: 95%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.closeButton {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #666;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.2s;
+}
+
+.closeButton:hover {
+  background-color: #f0f0f0;
+}
+
+.popupContent {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.popupImage {
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  padding: 1rem;
+}
+
+.popupDetails {
+  flex: 1;
+  min-width: 0;
+}
+
+.popupDetails h2 {
+  margin: 0 0 1.5rem 0;
+  color: #333;
+  font-size: 1.5rem;
+}
+
+.popupDetails p {
+  margin: 0.8rem 0;
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.popupEnquiry {
+  margin-top: 2rem;
+}
+
+.enquiryButton {
+  background-color: #6C63FF;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.2s;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.enquiryButton:hover {
+  background-color: #5a52d5;
+  transform: translateY(-2px);
+}
+
+/* Responsive Styles */
+@media (max-width: 1400px) {
+  .card {
+    width: 25%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .card {
+    width: 25%;
+  }
+}
+
+@media (max-width: 992px) {
+  .card {
+    width: 20%;
+  }
+  
+  .popupContent {
+    gap: 1.5rem;
+  }
+  
+  .popupImage {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 25%;
+    min-width: 180px;
+  }
+  
+  .popupContent {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .popupImage {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+  
+  .popupDetails {
+    width: 100%;
+  }
+  
+  .popupDetails h2 {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 25%;
+    min-width: 160px;
+  }
+  
+  .popup {
+    padding: 1.5rem;
+  }
+  
+  .popupDetails h2 {
+    font-size: 1.2rem;
+  }
+  
+  .popupDetails p {
+    font-size: 0.9rem;
+  }
+  
+  .enquiryButton {
+    width: 100%;
+    justify-content: center;
+  }
+}
