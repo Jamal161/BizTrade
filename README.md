@@ -14,3 +14,4 @@ bun dev
 ```
 
 When click single product show pop-up product details 
+
